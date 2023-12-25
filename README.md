@@ -69,7 +69,15 @@ This theme uses [Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/) to compile
 This will create a fresh Hugo site in the folder `mynewsite`.
 
 ```
-hugo new site mynewsite
+# if you are not putting it under git control
+mkdir -p mynewsite/themese
+```
+
+If you are going to create it with git, then you should use github.com and create a new repo. 
+If you have the gh cli, then you can do it here with:
+
+```sh
+gh repo create mynewsite
 ```
 
 **3. Install the theme**
@@ -77,8 +85,12 @@ hugo new site mynewsite
 Download or git clone this theme into the sites themes folder `mynewsite/themes`. You should end up with the following folder structure `mynewsite/themes/hugo-hero-theme`
 
 ```
+# If you are not putting the site into git control
 cd mynewsite
 git clone https://github.com/zerostaticthemes/hugo-hero-theme.git themes/hugo-hero-theme
+
+# if this is going under git control
+git submodule add https://github.com/zerostaticthemeshugo-hero-theme themes/hugo-hero-theme
 ```
 
 **4. Copy the example content**
