@@ -1,0 +1,3 @@
+[submodule "eht-hugo-hero-theme"]
+	path = eht-hugo-hero-theme
+	url = git@github.com:edlen-tech/hugo-hero-theme
